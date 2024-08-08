@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
@@ -44,20 +45,58 @@ class MainActivity : AppCompatActivity() {
         val adapter = AdapterVp(this)
         viewPager.adapter = adapter
 
+        binding.topLinkBtn.setOnClickListener {
+            viewPager.setCurrentItem(0, true)  // Navigate to the first fragment
+        }
 
-        viewPager.registerOnPageChangeCallback(object :
-            ViewPager2.OnPageChangeCallback() {
+        binding.recentLinkBtn.setOnClickListener {
+            viewPager.setCurrentItem(1, true)  // Navigate to the second fragment
+        }
+
+        binding.topLinkBtn.setBackgroundResource(R.drawable.dr_blue_15)
+
+        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
                 when (position) {
                     0 -> {
-                        //TODO change color
+                        // Update the appearance for the "Top Links" button
+                        // Use this approach if you have the drawable resource ID
+                        binding.topLinkBtn.setBackgroundResource(R.drawable.dr_blue_15)
+
+                        binding.topLinkBtn.setTextColor(
+                            ContextCompat.getColor(
+                                this@MainActivity,
+                                R.color.white
+                            )
+                        ) // Ensure text color contrasts
+
+                        // Reset the appearance for the "Recent Links" button
+                        binding.recentLinkBtn.setBackgroundResource(R.drawable.dr_obg_20)
+                        binding.recentLinkBtn.setTextColor(
+                            ContextCompat.getColor(
+                                this@MainActivity,
+                                R.color.black
+                            )
+                        )
                     }
 
                     1 -> {
-                        //TODO change bg color
+                        binding.recentLinkBtn.setBackgroundResource(R.drawable.dr_blue_15)
+                        binding.recentLinkBtn.setTextColor(
+                            ContextCompat.getColor(
+                                this@MainActivity,
+                                R.color.white
+                            )
+                        ) // Ensure text color contrasts
+                        binding.topLinkBtn.setBackgroundResource(R.drawable.dr_obg_20)
+                        binding.topLinkBtn.setTextColor(
+                            ContextCompat.getColor(
+                                this@MainActivity,
+                                R.color.black
+                            )
+                        )
                     }
-
                 }
             }
         })

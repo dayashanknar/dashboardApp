@@ -9,6 +9,10 @@
     <color name="obg">#f0f3f4</color>
     <color name="blue">#0066CC</color>
     <color name="redT">#29FF0000</color>
+    <color name="colorTopLinkSelected">#FF5722</color>
+    <color name="colorRecentLinkSelected">#3F51B5</color>
+    <color name="colorTopLinkDefault">#FFFFFF</color>
+    <color name="colorRecentLinkDefault">#E0E0E0</color>
 
     <color name="greenT">#4900FF59</color>
     <color name="blueT">#49004CFF</color>

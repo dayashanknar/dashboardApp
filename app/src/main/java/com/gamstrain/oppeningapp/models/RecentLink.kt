@@ -7,7 +7,7 @@ data class RecentLink(
     val is_favourite: Boolean,
     val original_image: String,
     val smart_link: String,
-    val thumbnail: Any,
+    val thumbnail: String,
     val times_ago: String,
     val title: String,
     val total_clicks: Int,
