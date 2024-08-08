@@ -46,6 +46,7 @@ android {
     kapt {
         correctErrorTypes = true
     }
+
 }
 
 dependencies {
@@ -89,6 +90,7 @@ dependencies {
     // hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
+
 
 }
 

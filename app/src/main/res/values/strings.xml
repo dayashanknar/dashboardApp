@@ -5,4 +5,9 @@
     <string name="upload">Upload</string>
     <string name="campaigns">Campaigns</string>
     <string name="profile">Profile</string>
+    <string name="dashbard">Dashbard</string>
+    <string name="description">Description</string>
+    <string name="dashapp_ud83d_udc4b">DashApp 👋</string>
+    <string name="view_analytics">View Analytics</string>
+    <string name="top_links">Top Links</string>
 </resources>
