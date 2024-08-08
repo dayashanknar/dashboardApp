@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.gamstrain.oppeningapp";
+option java_multiple_files = true;
+
+message localData {
+  string auth_token = 1;
+}
+
