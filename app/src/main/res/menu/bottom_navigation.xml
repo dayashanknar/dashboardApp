@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/links"
+        android:enabled="true"
+        android:icon="@drawable/ic_link"
+        android:title="@string/links" />
+    <item
+        android:id="@+id/courses"
+        android:enabled="true"
+        android:icon="@drawable/ic_courses"
+        android:title="@string/courses" />
+    <item
+        android:id="@+id/upload"
+        android:enabled="true"
+        android:icon="@drawable/ic_add"
+        android:title="@string/upload" />
+    <item
+        android:id="@+id/campaigns"
+        android:enabled="true"
+        android:icon="@drawable/ic_campaingns"
+        android:title="@string/campaigns" />
+    <item
+        android:id="@+id/user"
+        android:enabled="true"
+        android:icon="@drawable/ic_user"
+        android:title="@string/profile" />
+
+</menu>

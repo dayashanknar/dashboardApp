@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Oppe</string>
+    <string name="app_name">DashApp</string>
+    <string name="courses">Courses</string>
+    <string name="links">Links</string>
+    <string name="upload">Upload</string>
+    <string name="campaigns">Campaigns</string>
+    <string name="profile">Profile</string>
 </resources>

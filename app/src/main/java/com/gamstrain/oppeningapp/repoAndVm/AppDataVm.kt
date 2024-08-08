@@ -21,12 +21,4 @@ class AppDataVm @Inject constructor(private val repository: AppDataRepo) : ViewM
         return repository.getAuthToken()
     }
 
-//    appDataVm.getAuthToken().collect {
-//        actionsVm.deleteComment(it!!, "${feed.postId}_${feed.commentId}")
-//        actionMode?.finish() // Finish the action mode after delete action
-//        binding.deleteButton.visibility = GONE // Hide delete button after action
-//        binding.root.visibility = GONE
-//    }
-
-//    appDataVm.updateAuthToken(idToken)
 }
