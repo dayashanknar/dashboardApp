@@ -2,7 +2,7 @@ package com.gamstrain.oppeningapp.models
 
 data class DashboardResponse(
     val applied_campaign: Int,
-    val `data`: Data,
+    val data: Data,
     val extra_income: Double,
     val links_created_today: Int,
     val message: String,

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_marginTop="15dp"
+    android:background="@drawable/dr_white_15"
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/icon"
@@ -13,18 +16,17 @@
         android:background="@drawable/bdr_bdr_1_tr_3"
         android:contentDescription="@string/description"
         android:padding="5dp"
-        android:src="@drawable/ic_search"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@+id/clicks"
         android:maxLines="1"
-        android:text="@android:string/autofill"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/icon"
         app:layout_constraintTop_toTopOf="@id/icon" />
@@ -36,7 +38,6 @@
         android:layout_marginStart="10dp"
         android:ellipsize="end"
         android:maxLines="1"
-        android:text="@android:string/autofill"
         app:layout_constraintStart_toEndOf="@+id/icon"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
@@ -46,13 +47,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:ellipsize="end"
-        android:textStyle="bold"
-        android:maxLines="1"
+        android:layout_marginEnd="10dp"
         android:text="6564"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/icon"
-        />
+        app:layout_constraintTop_toTopOf="@+id/icon" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/click"
+        app:layout_constraintEnd_toEndOf="@+id/clicks"
+        app:layout_constraintStart_toStartOf="@+id/clicks"
+        app:layout_constraintTop_toBottomOf="@+id/clicks" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_bd"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/link"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            />
+
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:contentDescription="@string/description"
+            android:src="@drawable/ic_copy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

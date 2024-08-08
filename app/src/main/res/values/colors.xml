@@ -8,5 +8,9 @@
     <color name="whiteTp">#56959595</color>
     <color name="obg">#f0f3f4</color>
     <color name="blue">#0066CC</color>
+    <color name="redT">#29FF0000</color>
+
+    <color name="greenT">#4900FF59</color>
+    <color name="blueT">#49004CFF</color>
 
 </resources>

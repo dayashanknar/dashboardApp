@@ -6,7 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Header
 
 interface ApiService {
-    @GET("/dashboardNew")
+    @GET("dashboardNew")
     suspend fun getDashboard(
         @Header("Authorization") idToken: String
     ): Response<DashboardResponse>

@@ -1,0 +1,22 @@
+package com.gamstrain.oppeningapp.viewPagerAdp
+
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.gamstrain.oppeningapp.FrLinks
+
+class AdapterVp(fragmentActivity: FragmentActivity) :
+    FragmentStateAdapter(fragmentActivity) {
+
+    override fun getItemCount(): Int {
+        return 2 // Number of fragments
+    }
+
+    override fun createFragment(position: Int): Fragment {
+        return when (position) {
+            0 -> FrLinks()
+            1 -> FrLinks()
+            else -> throw IndexOutOfBoundsException("Invalid fragment index")
+        }
+    }
+}
