@@ -60,6 +60,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="4dp"
+                    android:paddingVertical="10dp"
+                    android:alpha=".6"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -118,7 +120,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="22 Aug - 23 Aug"
+                                android:text="01 Jan - 3 Sept"
                                 android:textSize="10sp" />
 
                             <ImageView
@@ -249,6 +251,7 @@
                     android:textColor="@color/black"
                     app:cornerRadius="10dp"
                     app:icon="@drawable/ic_whatsapp"
+                    app:iconTint="@color/black"
                     app:iconPadding="5dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

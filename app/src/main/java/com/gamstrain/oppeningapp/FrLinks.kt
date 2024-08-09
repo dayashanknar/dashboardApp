@@ -59,13 +59,13 @@ class FrLinks : Fragment(R.layout.fr_links) {
       }
 
    }
-   fun mapTopLinkToLinkD(topLink: TopLink): LinkD {
+   private fun mapTopLinkToLinkD(topLink: TopLink): LinkD {
       return LinkD(
          thumb = topLink.original_image,
-         title = topLink.title,
-         des = topLink.smart_link,
+         title = topLink.app,
+         des = topLink.title,
          clicks = topLink.total_clicks.toString(),
-         link = topLink.smart_link,
+         link = topLink.web_link,
       )
    }
 

@@ -44,6 +44,7 @@ class FrLinksR : Fragment(R.layout.fr_links) {
          dashVm.getDashState.observe(viewLifecycleOwner) { state ->
             when (state) {
                is NetworkState.Loading -> {
+                  showToast(requireContext(), "Loading...")
                }
 
                is NetworkState.Success -> {
@@ -60,13 +61,13 @@ class FrLinksR : Fragment(R.layout.fr_links) {
       }
 
    }
-   fun mapTopLinkToLinkD(topLink: RecentLink): LinkD {
+   private fun mapTopLinkToLinkD(topLink: RecentLink): LinkD {
       return LinkD(
          thumb = topLink.original_image,
-         title = topLink.title,
-         des = topLink.smart_link,
+         title = topLink.app,
+         des = topLink.title,
          clicks = topLink.total_clicks.toString(),
-         link = topLink.smart_link,
+         link = topLink.web_link,
       )
    }
 

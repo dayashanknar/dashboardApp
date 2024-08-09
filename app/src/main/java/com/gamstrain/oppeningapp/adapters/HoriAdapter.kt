@@ -25,11 +25,5 @@ class HoriAdapter(
 
     override fun getItemCount(): Int = data.size
 
-//    fun updateSelection(position: Int) {
-//        val previousPosition = selectedPosition
-//        selectedPosition = position
-//        notifyItemChanged(previousPosition) // Notify the previously selected item
-//        notifyItemChanged(selectedPosition) // Notify the newly selected item
-//    }
 
 }
